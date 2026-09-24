@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+    height: 70px;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    color: #4f46e5;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #4f46e5;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 0;
+}
+
+.hero-conteudo {
+    max-width: 750px;
+}
+
+.tag {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 14px;
+
+    background-color: #e0e7ff;
+    color: #4f46e5;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: #1f2937;
+    font-size: 52px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+
+    color: #555;
+    font-size: 19px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    padding: 60px 0;
+
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 40px 0 80px;
+}
+
+.card {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icone {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #4f46e5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PÁGINAS INTERNAS
+========================= */
+
+.pagina-intro {
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.pagina-intro h1 {
+    color: #1f2937;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.pagina-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    padding: 30px 0 60px;
+}
+
+.beneficio {
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.beneficio:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.beneficio .icone {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.beneficio h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.beneficio p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   DESTAQUE
+========================= */
+
+.destaque {
+    margin-bottom: 80px;
+    padding: 40px;
+
+    background-color: #eef2ff;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.destaque h2 {
+    color: #3730a3;
+    margin-bottom: 15px;
+}
+
+.destaque p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #555;
+    line-height: 1.7;
+}
+
+/* =========================
+   RISCOS
+========================= */
+
+.riscos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px 0 60px;
+}
+
+.risco {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.risco:hover {
+    transform: translateX(5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.risco .icone {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff1f2;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+.risco h2 {
+    margin-bottom: 10px;
+
+    font-size: 23px;
+}
+
+.risco p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+.alerta {
+    margin-bottom: 80px;
+    padding: 40px;
+
+    background-color: #fff7ed;
+
+    border-left: 5px solid #f97316;
+    border-radius: 8px;
+}
+
+.alerta h2 {
+    margin-bottom: 15px;
+}
+
+.alerta p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* =========================
+   DICAS
+========================= */
+
+.dicas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    padding: 30px 0 60px;
+}
+
+.dica {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.dica:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.numero {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #4f46e5;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dica h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dica p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MENSAGEM FINAL
+========================= */
+
+.mensagem-final {
+    margin-bottom: 80px;
+    padding: 50px 30px;
+
+    background-color: #eef2ff;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.mensagem-final h2 {
+    color: #3730a3;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.mensagem-final p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #555;
+    line-height: 1.7;
+}
+
+/* =========================
+   REFERÊNCIAS
+========================= */
+
+.referencias {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px 0 60px;
+}
+
+.referencia {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.referencia:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.referencia-numero {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e0e7ff;
+    color: #4f46e5;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.referencia h2 {
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+.referencia p {
+    color: #666;
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.fonte {
+    color: #4f46e5;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fonte:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   REFERÊNCIA FINAL
+========================= */
+
+.referencia-final {
+    margin-bottom: 80px;
+    padding: 40px;
+
+    background-color: #eef2ff;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.referencia-final h2 {
+    color: #3730a3;
+    margin-bottom: 15px;
+}
+
+.referencia-final p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        height: auto;
+        min-height: 70px;
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .dicas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ============================= */
+/* CELULAR */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 0 16px;
+    }
+
+    .cabecalho {
+        padding: 18px 16px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu {
+        gap: 10px 16px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    /* Página inicial */
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .tag {
+        font-size: 11px;
+    }
+
+
+    /* Páginas internas */
+
+    .pagina-intro {
+        padding: 55px 0 35px;
+    }
+
+    .pagina-intro h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .pagina-intro p {
+        font-size: 16px;
+    }
+
+
+    /* Cards */
+
+    .card,
+    .beneficio,
+    .dica,
+    .risco,
+    .referencia {
+        padding: 24px;
+    }
+
+
+    /* Riscos / Saúde */
+
+    .risco {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .risco .icone {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* Dicas */
+
+    .dica {
+        gap: 15px;
+    }
+
+    .numero {
+        min-width: 45px;
+        width: 45px;
+        height: 45px;
+    }
+
+
+    /* Referências */
+
+    .referencia {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .referencia-numero {
+        min-width: 45px;
+        width: 45px;
+        height: 45px;
+    }
+
+
+    /* Seções */
+
+    .sobre {
+        padding: 45px 0;
+    }
+
+    .sobre h2 {
+        font-size: 28px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .destaque {
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+
+    .mensagem-final {
+        padding: 35px 20px;
+        margin-bottom: 50px;
+    }
+
+    .mensagem-final h2 {
+        font-size: 24px;
+    }
+
+    .alerta {
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+
+}
